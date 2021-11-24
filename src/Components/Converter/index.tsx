@@ -14,7 +14,7 @@ const Converter: FC = () => {
 
   const { account, activateBrowserWallet } = useEthers()
   const etherBalance = useEtherBalance(account)
-  console.log("%%%%%%%% ", etherBalance && formatEther(etherBalance))
+  console.log(etherBalance && formatEther(etherBalance))
 
   const handleNEP = (e: React.ChangeEvent<HTMLInputElement>) => {
     let temp: number = parseFloat(e.target.value)
@@ -40,8 +40,6 @@ const Converter: FC = () => {
     if (!account) setConnect(true)
     else setDetail(true)
   }
-
-  console.log("%%%%%%", connect)
 
   return (
     <div className="converter">
