@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import { Button, Modal } from 'react-bootstrap'
-import { useEthers } from '@usedapp/core'
 
 const WalletConnect: FC<{show:boolean, onConnect:() => void, onClose:() => void}> = ({ show, onConnect, onClose }) => (
   <Modal size="sm" centered show={show} onHide={onClose}>
