@@ -3,17 +3,19 @@ import { Button, Form } from 'react-bootstrap'
 import './styles.scss'
 
 const Converter: FC = () => {
-  const [nep, setNep] = useState<number>(0)
-  const [busd, setBusd] = useState<number>(0)
+  const [nep, setNep] = useState<number>()
+  const [busd, setBusd] = useState<number>()
 
-  const handleNEP = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setNep(Number(e.target.value))
-    setBusd(Number(e.target.value) * 3)
+  const handleNEP = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    let temp: number = parseFloat(e.target.value)
+    setNep(temp)
+    setBusd(temp * 3)
   }
 
-  const handleBUSD = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setBusd(Number(e.target.value))
-    setNep(Number(e.target.value) / 3)
+  const handleBUSD = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    let temp: number = parseFloat(e.target.value)
+    setBusd(temp)
+    setNep(temp / 3.00)
   }
 
   return (
