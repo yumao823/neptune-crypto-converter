@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import { useEthers } from '@usedapp/core'
+import './styles.scss'
 
 const WalletDetails: FC<{show:boolean, onClose:() => void}> = ({ show, onClose }) => {
   const { deactivate } = useEthers()
@@ -10,7 +11,7 @@ const WalletDetails: FC<{show:boolean, onClose:() => void}> = ({ show, onClose }
   }
 
   return (
-    <Modal size="sm" centered show={show} onHide={onClose}>
+    <Modal className="details" size="sm" centered show={show} onHide={onClose}>
       <Modal.Header closeButton>
         <Modal.Title>Wallet Details</Modal.Title>
       </Modal.Header>
