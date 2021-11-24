@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
-import Converter from './Components/Converter';
-import './App.scss';
+import React, { FC } from 'react'
+import Converter from './Components/Converter'
+import './App.scss'
 
 const App: FC = () => {
   return (

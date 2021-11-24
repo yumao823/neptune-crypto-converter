@@ -1,0 +1,18 @@
+.converter {
+  background-color: #282c34;
+  color: white;
+  padding: 50px 30px;
+  border-radius: 10px;
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+}
