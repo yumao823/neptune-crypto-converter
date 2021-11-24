@@ -27,11 +27,11 @@ const Converter: FC = () => {
       <Form className="d-flex flex-column">
         <Form.Group className="mb-1">
           <Form.Label>NEP</Form.Label>
-          <Form.Control value={controller == 'nep' ? nep : nep?.toFixed(2)} type="number" onChange={handleNEP} />
+          <Form.Control value={controller === 'nep' ? nep : nep?.toFixed(2)} type="number" onChange={handleNEP} />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>BUSD</Form.Label>
-          <Form.Control value={controller == 'busd' ? busd : busd?.toFixed(2)} type="number" onChange={handleBUSD} />
+          <Form.Control value={controller === 'busd' ? busd : busd?.toFixed(2)} type="number" onChange={handleBUSD} />
         </Form.Group>
         <Button variant="outline-primary" className="ms-auto me-auto">Check Wallet Details</Button>
       </Form>
