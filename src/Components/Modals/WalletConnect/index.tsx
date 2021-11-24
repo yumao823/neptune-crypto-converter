@@ -1,8 +1,9 @@
 import React, { FC } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import './styles.scss'
 
 const WalletConnect: FC<{show:boolean, onConnect:() => void, onClose:() => void}> = ({ show, onConnect, onClose }) => (
-  <Modal size="sm" centered show={show} onHide={onClose}>
+  <Modal className="connect" size="sm" centered show={show} onHide={onClose}>
     <Modal.Header closeButton>
       <Modal.Title>Wallet Details</Modal.Title>
     </Modal.Header>
