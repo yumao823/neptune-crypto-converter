@@ -1,7 +1,6 @@
 import React, { FC, useState } from 'react'
-import { Button, Form, Modal } from 'react-bootstrap'
-import { useEthers, useEtherBalance } from '@usedapp/core'
-import { formatEther } from '@ethersproject/units'
+import { Button, Form } from 'react-bootstrap'
+import { useEthers } from '@usedapp/core'
 import { WalletConnect, WalletDetails } from '../Modals'
 import './styles.scss'
 
