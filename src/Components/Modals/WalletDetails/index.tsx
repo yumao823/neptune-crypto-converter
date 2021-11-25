@@ -30,8 +30,8 @@ const WalletDetails: FC<{show:boolean, onClose:() => void}> = ({ show, onClose }
             <tr>
               <td>Account</td>
               <td className="d-flex justify-content-end">
-                <div className="account">{account}</div>
-                </td>
+                <div className="account">{`${account?.slice(0, 4)}...${account?.slice(-4)}`}</div>
+              </td>
             </tr>
             <tr>
               <td>Chain Id</td>
