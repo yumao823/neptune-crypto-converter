@@ -31,7 +31,7 @@ const Converter: FC = () => {
   const handleConnect = () => {
     activateBrowserWallet()
     setConnect(false)
-    setDetail(true)
+    if (account) setDetail(true)
   }
 
   const handleDetails = () => {
