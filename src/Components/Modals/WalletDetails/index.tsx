@@ -23,21 +23,23 @@ const WalletDetails: FC<{show:boolean, onClose:() => void}> = ({ show, onClose }
           <thead>
             <tr>
               <th>Key</th>
-              <th>Value</th>
+              <th className="text-end">Value</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Account</td>
-              <td className="account">{account}</td>
+              <td className="d-flex justify-content-end">
+                <div className="account">{account}</div>
+                </td>
             </tr>
             <tr>
               <td>Chain Id</td>
-              <td>{chainId}</td>
+              <td className="text-end">{chainId}</td>
             </tr>
             <tr>
               <td>Balance</td>
-              <td>{etherBalance && formatEther(etherBalance)}</td>
+              <td className="text-end">{etherBalance && formatEther(etherBalance)}</td>
             </tr>
           </tbody>
         </Table>

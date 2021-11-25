@@ -1,6 +1,14 @@
 .details {
   .modal-dialog {
     .modal-content {
+      .modal-body {
+        .table {
+          .account {
+            max-width: 100px;
+            overflow: hidden;
+          }
+        }
+      }
       .modal-footer {
         .btn {
           width: 100%;
