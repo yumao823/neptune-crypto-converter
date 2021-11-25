@@ -13,8 +13,6 @@ const Converter: FC = () => {
   const [controller, setController] = useState<string>()
 
   const { account, activateBrowserWallet } = useEthers()
-  const etherBalance = useEtherBalance(account)
-  console.log(etherBalance && formatEther(etherBalance))
 
   const handleNEP = (e: React.ChangeEvent<HTMLInputElement>) => {
     let temp: number = parseFloat(e.target.value)
